@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunépolis Cinema</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      color: #222;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      width: 250px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #003366;
+      background-color: #ffd700;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .gallery-item a:hover {
+      background-color: #e6c200;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: #003366;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    iframe {
+      margin: 20px auto;
+      display: block;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sunépolis Cinema</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <h2>Luxury Movie Experience </h2>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2020/10/21/metaphor-interior-architecture-cin--polis--modern-sophisticated-movie-theater-cinemas-archello.1603261330.2612.jpg" alt="Cinema Interior">
+      <a href="cinema1.html">Cinema Lobby</a>
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.licdn.com/dms/image/v2/C5612AQEORHUbB5VLgg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1623047684908?e=2147483647&t=xCwJZGYavEce9wNNPvc2IHwwQf7k2JkxwRZNJnbCuPc&v=beta" alt="Empty Theater Seats">
+      <a href="cinema2.html">Empty Theater</a>
+    </div>
+    <div class="gallery-item">
+      <img src="https://www.shutterstock.com/image-photo/vip-place-visitors-cinema-leather-600nw-2495605033.jpg" alt="VIP Recliner Seats">
+      <a href="cinema3.html">VIP Recliner Seats</a>
+    </div>
+    <div class="gallery-item">
+      <img src="https://gstatic1.promeai.pro/gallery/publish/2024/10/20/987cb7820b574ccda6ecb2eb1b6952bc.jpg" alt="Modern Cinema Design">
+      <a href="cinema4.html">Modern Interior</a>
+    </div>
+  </div>
+
+  <a href="about.html" class="button">Learn More About Us</a>
+
+  <h2>Watch Our Experience</h2>
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/V3vbFSA5_rU"
+    allowfullscreen></iframe>
+
+</body>
+</html>
