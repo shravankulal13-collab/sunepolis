@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunépolis Cinema</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      color: #222;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      width: 250px;
+    }
+
+    .gallery-item img {
+      width: 250px;
+      height: 180px;
+      object-fit:cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #003366;
+      background-color: #ffd700;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .form-section {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-section input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-section button {
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-section button:hover {
+      background-color: #005599;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sunépolis Cinema</h1>
+    <nav>
+      <a href="cine.html">Home</a>
+      <a href="about1.html">About</a>
+    </nav>
+  </header>
+
+  <h2>Luxury Movie Experience </h2>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2020/10/21/metaphor-interior-architecture-cin--polis--modern-sophisticated-movie-theater-cinemas-archello.1603261330.2612.jpg" alt="Cinema Interior">
+      <a href="cinema1.html">Cinema Lobby</a>
+    </div>
+    <div class="gallery-item">
+      <img src="data:image/jpeg;base64,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" alt="Empty Theater Seats">
+      <a href="cinema2.html">Empty Theater</a>
+    </div>
+    <div class="gallery-item">
+      <img src="https://www.shutterstock.com/image-photo/vip-place-visitors-cinema-leather-600nw-2495605033.jpg" alt="VIP Recliner Seats">
+      <a href="cinema3.html">VIP Recliner Seats</a>
+    </div>
+    <div class="gallery-item">
+      <img src="https://gstatic1.promeai.pro/gallery/publish/2024/10/20/987cb7820b574ccda6ecb2eb1b6952bc.jpg" alt="Modern Cinema Design">
+      <a href="cinema4.html">Modern Interior</a>
+    </div>
+  </div>
+
+  <!--  Movie Booking Form -->
+  <div class="form-section">
+    <h2>Book Your Movie</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="tel" placeholder="Phone Number" required><br>
+      <input type="number" placeholder="Age" required><br>
+      <input type="text" placeholder="Movie Name" required><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevents refreshing
+      window.location.href = "cine1.html"; // Go to next page
+    }
+  </script>
+
+</body>
+</html>
