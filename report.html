@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Missed Pickup</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; margin: 0; padding: 0; color: #333; }
+    header { background: #4CAF50; color: white; padding: 10px; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
+    main { padding: 20px; }
+    footer { text-align: center; background: #eee; padding: 10px; margin-top: 20px; }
+    input, textarea { display: block; margin-bottom: 10px; padding: 8px; width: 100%; max-width: 400px; }
+    button { background: #4CAF50; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+    button:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TrashTrack</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="report.html">Report</a>
+      <a href="alerts.html">Alerts</a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Report a Missed Pickup</h2>
+    <form id="reportForm">
+      <label>Street Name:</label>
+      <input type="text" required>
+      <label>City:</label>
+      <input type="text" required>
+      <label>Date Missed:</label>
+      <input type="date" required>
+      <label>Comments:</label>
+      <textarea rows="3"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="reportMessage"></p>
+  </main>
+
+  <footer>
+    <p> 2025 TrashTrack Team</p>
+  </footer>
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("reportForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("reportMessage").textContent = " Report submitted successfully!";
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
