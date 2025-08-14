@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #0077b6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005f87;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Your Trip</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Hurry up!!Fill Your Details Now</h2>
+        <form id="bookingForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Destination" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+
+    
+    <script src="backend.js"></script>
+</body>
+</html>
+
